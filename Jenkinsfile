@@ -6,6 +6,7 @@ pipeline {
             script {
                 echo "Checkout Code started"
                 git branch: "main" , url: 'https://github.com/SkHussainnn/static-web-app.git'
+                echo "Checkout Code completed"
         stage("Deployment Code") {
            script{
                echo "Deployment Code started"
