@@ -19,6 +19,7 @@ pipeline {
             steps {
                 echo "Deployment started"
                 deploy adapters: [nginx(url:'http://47.128.241.247:80' , credentialsId: 'nginxcred')]
+                echo "Deployment completed"
             }
         }
             }
