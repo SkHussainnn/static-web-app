@@ -13,7 +13,7 @@ pipeline {
         stage("Deployment Code") {
             steps {
                 echo "Deployment Code started"
-                sh 'scp -r /var/lib/Jenkins/workspace/Static-web-app/* ubuntu@13.212.78.178:/var/www/html/'
+                sh 'scp -r /var/lib/jenkins/workspace/Static-web-app/* ubuntu@13.212.78.178:/var/www/html/'
                 echo "Deployment Code completed"
             }
         }
